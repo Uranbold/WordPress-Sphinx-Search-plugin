@@ -30,7 +30,7 @@ class SearchSidebarWidget extends WP_Widget
     {
         $widget_ops = array('classname' => 'SearchSidebarWidget',
                             'description' => 'Sphinx search sidebar' );
-        $this->WP_Widget('SearchSidebarWidget', 'Sphinx Search sidebar',
+        parent::__construct('SearchSidebarWidget', 'Sphinx Search sidebar',
                 $widget_ops);
 
         //parent::WP_Widget(false, $name = 'SphinxLatestSearchesWidget');

@@ -31,7 +31,7 @@ class TopSearchesWidget extends WP_Widget
     {
         $widget_ops = array('classname' => 'TopSearchesWidget',
                             'description' => 'Sphinx related/top search terms' );
-        $this->WP_Widget('TopSearchesWidget', 'Sphinx Related/Top Searches', $widget_ops);
+        parent::__construct('TopSearchesWidget', 'Sphinx Related/Top Searches', $widget_ops);
     }
 
     /** @see WP_Widget::widget */

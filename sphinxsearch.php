@@ -123,8 +123,7 @@ class SphinxSearch{
 	 *
 	 * @return SphinxSearch
 	 */
-	function SphinxSearch()
-	{
+    function __construct() {
 		$this->config = new SphinxSearch_Config();
         $this->sphinxService = new SphinxService($this->config);
 		$this->backend = new SphinxSearch_BackEnd($this->config);
@@ -405,7 +404,7 @@ class SphinxSearch{
     function options_page()
     {
     	if (function_exists('add_options_page')) {
-            add_options_page('Sphinx Search', 'Sphinx Search', 9, basename(__FILE__), array(&$this, 'print_admin_page'));
+            add_options_page('Sphinx Search', 'Sphinx Search', 'manage_options', basename(__FILE__), array(&$this, 'print_admin_page'));
         }
     }
 

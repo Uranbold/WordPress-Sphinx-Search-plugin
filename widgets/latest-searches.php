@@ -31,7 +31,7 @@ class LatestSearchesWidget extends WP_Widget
     {
         $widget_ops = array('classname' => 'SphinxLatestSearchesWidget',
                             'description' => 'Sphinx last search terms' );
-        $this->WP_Widget('SphinxLatestSearchesWidget', 'Sphinx Last Searches', $widget_ops);
+        parent::__construct('SphinxLatestSearchesWidget', 'Sphinx Last Searches', $widget_ops);
 
         //parent::WP_Widget(false, $name = 'SphinxLatestSearchesWidget');
     }
