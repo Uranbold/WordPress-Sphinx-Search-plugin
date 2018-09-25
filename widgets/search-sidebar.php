@@ -26,7 +26,7 @@
 class SearchSidebarWidget extends WP_Widget
 {
     /** constructor */
-    function  SearchSidebarWidget()
+    function  __construct()
     {
         $widget_ops = array('classname' => 'SearchSidebarWidget',
                             'description' => 'Sphinx search sidebar' );
