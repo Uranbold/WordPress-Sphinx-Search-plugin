@@ -27,7 +27,7 @@ class TopSearchesWidget extends WP_Widget
 {
     var $instance = null;
     /** constructor */
-    function  TopSearchesWidget()
+    function  __construct()
     {
         $widget_ops = array('classname' => 'TopSearchesWidget',
                             'description' => 'Sphinx related/top search terms' );
