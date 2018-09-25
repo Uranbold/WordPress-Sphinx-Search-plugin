@@ -27,7 +27,7 @@ class LatestSearchesWidget extends WP_Widget
 {
     var $instance = null;
     /** constructor */
-    function  LatestSearchesWidget()
+    function  __construct()
     {
         $widget_ops = array('classname' => 'SphinxLatestSearchesWidget',
                             'description' => 'Sphinx last search terms' );
